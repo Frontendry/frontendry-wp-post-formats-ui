@@ -3,7 +3,7 @@ Post formats admin UI for both Gutenberg and Classic(TinyMCE) WP Editors.
 
 The supported WP post formats are Video, Gallery, Audio, Link and Quote.
 
-After installing and activating the plugin, you'll get metaboxe(s) for the respective post format. 
+After installing and activating the plugin, you'll get metabox for the respective post format. 
 
 Use the below field values on your theme. This should be within The Loop. Enjoy!!!
 
