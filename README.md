@@ -5,7 +5,7 @@ The supported WP post formats are Video, Gallery, Audio, Link and Quote.
 
 After installing the plugin, use these field values on your theme. The values should be within the loop. Enjoy!!!
 
-For Video Post Format:
+1. For Video Post Format:
 
 // Best for self-hosted videos, .mp4, .ogg videos
 
@@ -16,11 +16,11 @@ $video_media = get_post_meta( $post->ID, '_media_video_field', true );
 $o_embedded_media = wp_oembed_get( $video_media );
 
 
-For Gallery Post Format:
+2. For Gallery Post Format:
 
 $gallery_media = get_post_meta( $post->ID, '_media_gallery_field', true );
 
-For Audio Post Format:
+3. For Audio Post Format:
 
 // Best for self-hosted audios, .mp3 audios
 
@@ -31,11 +31,11 @@ $audio_media = get_post_meta( $post->ID, '_media_audio_field', true );
 $o_embedded_media = wp_oembed_get( $audio_media );
 
 
-For Link Post Format:
+4. For Link Post Format:
 
 $current_link = get_post_meta( $post->ID, '_any_link_field', true );
 
 
-For Quote Post Format:
+5. For Quote Post Format:
 
 $current_quote_author = get_post_meta( $post->ID, '_quote_author_field', true );
