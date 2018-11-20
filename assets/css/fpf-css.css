@@ -1,0 +1,153 @@
+/*--------------------------------------------------------------
+## Display the Post Format Metaboxes
+--------------------------------------------------------------*/
+.postbox[id^="fpf-"] {
+    display:none;
+}
+.postbox.active[id^="fpf-"] {
+    display:block;
+}
+
+/*--------------------------------------------------------------
+## General Styling
+--------------------------------------------------------------*/
+
+.fpf-inside label {
+    display:block;
+    margin:20px 0 10px;
+}
+
+.more-info {
+    display:block;
+    margin-top:4px;
+    font-style: italic;
+}
+
+.fpf-inside textarea {
+    height:100px;
+}
+
+.fpf-inside textarea, .fpf-inside input[type="text"]  {
+    width:100%;    
+}
+
+/*--------------------------------------------------------------
+## Gallery Metabox Styling
+--------------------------------------------------------------*/
+.fpf-gallery-cont {
+    width:100%;
+    height:300px;
+    border:1px solid #dddddd;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+    color: #32373c;
+    transition: 50ms border-color ease-in-out;
+}
+
+.fpf-gallery-cont:focus {
+    border-color: #5b9dd9;  
+    box-shadow: 0 0 2px rgba(30,140,190,.8);
+}
+
+.fpf-gallery-cont-in {
+    height:100%;
+    overflow: auto;
+}
+
+.fpf-gallery-eles {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-align-items: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-direction: row;
+    -moz-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -ms-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start; 
+}
+
+.fpf-gallery-ele {
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 14.28%;
+    height:105px;
+    background-color:#eeeeee;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);
+    position: relative;
+    cursor: move;
+}
+
+.fpf-gallery-ele:before {
+    content:attr(data-img-id);
+    color:#fff;
+    font-size: 30px;
+    position: absolute;
+    left:0;
+    top:50%;
+    text-shadow: 1px 1px 1px #000;
+    display: none;
+}
+
+.fpf-gallery-ele img {
+    max-width:100%;
+    height:auto;
+    display:none;
+}
+
+.remove-img {
+    position: absolute;
+    right:0;
+    top:0;
+    font-size: 0;
+    line-height: 0;    
+    display:block;
+    cursor: pointer;
+}
+
+.remove-img:before {
+    content: "\f158";
+    font: 400 15px/25px dashicons;
+    width: 25px;
+    height: 25px;
+    background: rgba(186, 0, 54, .7);
+    color:#fff;
+    display:block;
+    text-align: center;
+}
+
+.cta-cont {
+    text-align: center;
+    margin:25px 0;
+}
+
+.gallery-upload {
+    display:inline-block;
+    background: #0085ba;
+    border:1px solid #006a95;
+    box-shadow: inset 0 -1px 0 #00648c;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #005d82,1px 0 1px #005d82,0 1px 1px #005d82,-1px 0 1px #005d82;
+    border-radius: 4px;
+    padding:10px 12px;
+    cursor: pointer;
+}
+
+.gallery-upload:hover {
+    background: #007eb1;
+    border-color: #00435d;
+    box-shadow: inset 0 -1px 0 #00435d;
+    color: #fff;
+}
