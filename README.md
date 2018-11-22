@@ -1,4 +1,4 @@
-# frontendry-wp-post-types-ui
+# frontendry-wp-post-formats-ui
 Post formats admin UI for both Gutenberg and Classic(TinyMCE) WP Editors.
 
 The supported WP post formats are Video, Gallery, Audio, Link and Quote.
