@@ -105,26 +105,26 @@ add_action( 'add_meta_boxes_post', 'fpf_add_meta_boxes' );
 /**
  * Rendering and saving video metabox 
  */
-include( '/render-save/video.php' ) ;
+require_once plugin_dir_path( __FILE__ ) . '/render-save/video.php';
 
 /**
  * Rendering and saving gallery metabox 
  */
- include( '/render-save/gallery.php' ) ;
+require_once plugin_dir_path( __FILE__ ) . '/render-save/gallery.php';
 
  /**
  * Rendering and saving audio metabox 
  */
-include( '/render-save/audio.php' ) ;
+require_once plugin_dir_path( __FILE__ ) . '/render-save/audio.php';
 
  /**
  * Rendering and saving link metabox 
  */
-include( '/render-save/link.php' ) ;
+require_once plugin_dir_path( __FILE__ ) . '/render-save/link.php';
 
  /**
  * Rendering and saving quote metabox 
  */
-include( '/render-save/quote.php' ) ;
+require_once plugin_dir_path( __FILE__ ) . '/render-save/quote.php';
 
 ?>
